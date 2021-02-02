@@ -24,7 +24,7 @@ document.body.style.overflow="hidden";
     
     function my_touchstart(e)
     {
-        
+        alert("inside touchstart");
         console.log("my_touchstart");
         last_position_of_x=e.touches[0].clientX-canvas.offsetLeft;
         last_position_of_y=e.touches[0].clientY-canvas.offsetTop;
@@ -39,7 +39,7 @@ document.body.style.overflow="hidden";
 
     function my_touchmove(e)
     {
-        
+                alert("inside touchmove");
         console.log("my_touchmove");
         current_position_of_touch_x=e.touches[0].clientX-canvas.offsetLeft;
         current_position_of_touch_y=e.touches[0].clientY-canvas.offsetTop;
