@@ -60,15 +60,14 @@ document.body.style.overflow="hidden";
         ctx.moveto(last_position_of_x, last_position_of_y);
 
         console.log("Current position of x and y coordinates = ");
-        console.log("x  = " + current_position_of_mouse_x + "y = " + current_position_of_mouse_y);
+        console.log("x  = " + current_position_of_touch_x + "y = " + current_position_of_touch_y);
        
-
-        
+       
         ctx.lineto(current_position_of_touch_x, current_position_of_touch_y);
         ctx.stroke();
         
 
-        last_position_of_x = current_position_of_mouse_x; 
-        last_position_of_y = current_position_of_mouse_y;
+        last_position_of_x = current_position_of_touch_x; 
+        last_position_of_y = current_position_of_touch_y;
     }
 
