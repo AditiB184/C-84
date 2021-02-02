@@ -40,6 +40,9 @@ document.body.style.overflow="hidden";
     function my_touchmove(e)
     {
                 alert("inside touchmove");
+                alert("x = " + last_position_of_x + "y = " + last_position_of_y);
+         alert("color = " + color + "width = " + width);
+        
         console.log("my_touchmove");
         current_position_of_touch_x=e.touches[0].clientX-canvas.offsetLeft;
         current_position_of_touch_y=e.touches[0].clientY-canvas.offsetTop;
@@ -49,11 +52,17 @@ document.body.style.overflow="hidden";
         ctx.lineWidth = width_of_line;
 
         console.log("Last position of x and y coordinates = ");
+        
+        alert("Last position x = " + last_position_of_x + "y = " + last_position_of_y);
+        
         console.log("x = " + last_position_of_x + "y = " + last_position_of_y);
         ctx.moveto(last_position_of_x, last_position_of_y);
 
         console.log("Current position of x and y coordinates = ");
         console.log("x  = " + current_position_of_mouse_x + "y = " + current_position_of_mouse_y);
+       
+                alert("Current position x = " + current_position_of_mouse_x + "y = " + current_position_of_mouse_y);
+        
         ctx.lineto(current_position_of_touch_x, current_position_of_touch_y);
         ctx.stroke();
         
