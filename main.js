@@ -41,7 +41,7 @@ document.body.style.overflow="hidden";
     {
                 alert("inside touchmove");
                 alert("x = " + last_position_of_x + "y = " + last_position_of_y);
-         alert("color = " + color + "width = " + width);
+         alert("color = " + color + "width of line = " + width_of_line);
         
         console.log("my_touchmove");
         current_position_of_touch_x=e.touches[0].clientX-canvas.offsetLeft;
