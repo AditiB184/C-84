@@ -53,6 +53,7 @@ document.body.style.overflow="hidden";
 
         console.log("Last position of x and y coordinates = ");
         
+        alert("Current position x = " + current_position_of_touch_x + "y = " + current_position_of_touch_y);
         alert("Last position x = " + last_position_of_x + "y = " + last_position_of_y);
         
         console.log("x = " + last_position_of_x + "y = " + last_position_of_y);
@@ -61,7 +62,7 @@ document.body.style.overflow="hidden";
         console.log("Current position of x and y coordinates = ");
         console.log("x  = " + current_position_of_mouse_x + "y = " + current_position_of_mouse_y);
        
-                alert("Current position x = " + current_position_of_mouse_x + "y = " + current_position_of_mouse_y);
+
         
         ctx.lineto(current_position_of_touch_x, current_position_of_touch_y);
         ctx.stroke();
